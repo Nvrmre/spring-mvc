@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>
+            thymeleaf
+        </title>
+    </head>
+    <body>
+
+        <!-- theDate dari DemoControlers -->
+        <p th:text="'now is' + ${theDate}"></p>
+
+        <!-- untuk link page -->
+        <a th:href="@{/about}">Next</a>
+  
+    </body>
+</html>
