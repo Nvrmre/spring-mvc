@@ -4,15 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
-
 @Controller
-public class DemoController {
- 
-    @GetMapping("/demo")
+public class DashboardController {
+     @GetMapping("/dashboard")
     public String sayHello(Model theModel){
         theModel.addAttribute("theDate",java.time.LocalDate.now());
-        return "hello";
+        return "Dashboard";
         
     }
     @GetMapping("/about")
@@ -24,5 +21,4 @@ public class DemoController {
     public String adminPage(){
         return "admin/dashboard";
     }
-
 }
