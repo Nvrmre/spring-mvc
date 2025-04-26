@@ -12,20 +12,19 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String name;
     private String address;
 
-
-    public User(){
+    public User() {
     }
 
     public Long getId() {
-        return this.Id;
+        return this.id;
     }
 
     public void setId(Long Id) {
-        this.Id = Id;
+        this.id = Id;
     }
 
     public String getName() {
@@ -44,6 +43,4 @@ public class User {
         this.address = address;
     }
 
-
-    
 }

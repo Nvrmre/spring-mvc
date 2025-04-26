@@ -1,0 +1,13 @@
+GET http://localhost:8080/users
+
+
+###
+
+POST http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+    "id": 1,
+  "name": "John Doe",
+  "address": "oke"
+  }
